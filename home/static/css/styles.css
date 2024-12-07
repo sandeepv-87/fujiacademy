@@ -1,0 +1,36 @@
+
+.custom-bg {
+    background-color: rgba(246, 248, 248, 0.21); /* Replace with your desired color */
+}
+
+.glitter-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fcfbfa;
+    background-image: linear-gradient(90deg, #000000, #cb0b0b);
+    text-fill-color: transparent;
+    animation: shimmer 3s infinite linear;
+    position: relative;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+.card-img-top{
+    size: auto;
+}
+.container {
+
+    justify-content: center;
+    background-color: #2d2a2c;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(9, 8, 8);
+    align-items: center;      /* Center vertically */
+
+}

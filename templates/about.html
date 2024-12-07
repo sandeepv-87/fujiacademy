@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}aboutus{% endblock %}
+{% block aboutusactive %}active{% endblock %}
+{% block body %}
+    <h1 class="h1tag" >WELCOME TO FUJI ACADEMY</h1>
+<div class="container text-md-center my-lg-5 ">
+
+    <div class="d-grid gap-lg-2">
+
+        <p class="glitter-text">
+            A place where opportunities meet preparation, and dreams take flight. We are dedicated to helping students explore and secure rewarding career opportunities in Japan by breaking down language and cultural barriers.
+
+        </p>
+         <p class="glitter-text">
+            Our mission is to create a stress-free pathway for students to achieve their goals in Japan. We understand the challenges that come with starting a career in a foreign country. That’s why we have developed a comprehensive program that not only teaches the Japanese language but also provides the tools and guidance students need to thrive in their professional and personal lives abroad.
+
+        </p>
+        <p class="glitter-text">
+           But we don’t stop at language training. We also provide valuable insights into Japan's job market, work culture, and lifestyle. Our goal is to equip students with the knowledge and confidence to make informed career decisions and adapt seamlessly to the Japanese work environment.
+
+
+        </p>
+
+        <p class="glitter-text">
+        What sets us apart is our unwavering commitment to student success. Our expert instructors bring years of experience and a passion for teaching, ensuring that every student receives personalized attention and support. Whether you’re a student aspiring to work in Japan or a professional seeking new opportunities, we are here to guide you every step of the way.
+        </p>
+        <p class="glitter-text">
+            We believe in creating a community of learners who are not only job-ready but also culturally aware and confident to face global challenges. Together, we will help you unlock your full potential and achieve your dreams.
+
+        </p>
+        <p class="glitter-text">
+            Join us on this transformative journey as we help you build a stress-free, fulfilling career in Japan. Join hands with Fuji Japanese Academy today.  Let’s craft your future together!
+        </p>
+    </div>
+
+</div>
+<style>
+  .container {
+    width: 100%;
+    height: auto; /* Visible container height */
+    overflow: hidden; /* Hides overflowing content initially */
+    position: relative;
+    background-color: #fcfbfa;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #ff0000 ;
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: thin; /* For Firefox, optional for aesthetics */
+}
+
+.d-grid {
+    gap: 2rem;
+}
+
+.glitter-text {
+    font-size: 25px;
+    font-style: italic;
+    font-family: AkayaKanadaka;
+    font-weight: 400;
+    color: #090808;
+    background: linear-gradient(90deg, #3a3a38, #1a1819);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.h1tag{
+    text-align:center ;
+    font-family: AkayaTelivigala;
+    color: #090808;
+
+}
+    </style>
+
+
+{% endblock %}

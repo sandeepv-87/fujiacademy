@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}contact{% endblock %}
+{% block contactactive %}active{% endblock %}
+{% block body %}
+    <div class="container" style="color: white;font-style: italic">
+        <h1 class="text-center">Get In Touch</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="exampleFormControlInput1"
+                       placeholder="enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleFormControlInput2"
+                       placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Phone number</label>
+                <input type="number" class="form-control" name="number" id="exampleFormControlInput3"
+                       placeholder="enter your number">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea4" class="form-label">Introduction</label>
+                <textarea class="form-control" name="text" id="exampleFormControlTextarea4" rows="3"></textarea>
+            </div>
+                <button type="submit" class="btn btn-success" style="background-color: #cb0b0b; color: white; border: 2px solid white;">
+    Register
+</button>
+
+        </form>
+
+    </div>
+  </div>
+</nav>
+    </div>
+
+{% endblock %}

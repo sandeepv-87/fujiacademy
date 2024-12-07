@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block homeactive %}active{% endblock %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills img {
+            width: 100px;
+            height: 100px;
+        }
+        .skills p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .bg-light {
+            background-color: #f8f9fa!important;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .head{
+            font-family: "American Typewriter";
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        }
+        .icon-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+        }
+        .info-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.info-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.info-container p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.info-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Profile Section -->
+    <div class="container text-center">
+        <img src="{% static 'img/FULl.png' %}" alt="My Photo" class="profile-pic">
+        <h1 class="head">Welcome To FUJI Academy</h1>
+        <p class="head">Let's visit Japan with us</p>
+    </div>
+
+    <!-- Skills Section -->
+
+    <div class="container text-md-center" >
+        <h1 style="font-style: italic ;color: white;text-align: center">VISSION</h1>
+        <p style=" font-size: 30px ;font-style: italic;color: white" >
+
+Our vision is to empower students by providing the skills and knowledge to excel in global job markets, connecting India and Japan through the Japanese language. We aim to be a gateway for students to unlock career opportunities and foster cross-cultural exchange..</p>
+    </div>
+    <div class="container text-md-center" >
+        <h2 style="font-style: italic ;color: white;text-align: center">MISSION</h2>
+        <p style="font-style: italic;color: white;font-size: 30px">
+            Our mission is to help students overcome language barriers and achieve success in global job markets, empowering them to pursue rewarding careers in both countries. We are dedicated to offering personalized training and resources, ensuring each student is well-equipped for the challenges and opportunities that lie ahead. With a focus on cultural understanding and Japanese language proficiency, we help students build a future in the global workforce.</p>
+    </div>
+    <div class="container text-md-center" >
+ <div class="info-container text-md-center" style="text-align: center" >
+    <h2>Contact </h2>
+     <p style="font-size: 14px"> 13-6-615/H41,Beside Hotel MVR Grand</p>
+     <p style="font-size: 14px">Opposite St of Srinivasam,Peddakapu St</p>
+     <p style="font-size: 14px">Tirupati ,Andhra Pradesh,pin:517501</p>
+
+    <p>
+      <span class="icon">📧</span>
+      <strong>Email:</strong>
+      <a href="mailto:example@gmail.com">fujiacademy.tirupati@gmail.com</a>
+    </p>
+    <p>
+      <span class="icon">📱</span>
+      <strong>Mobile:</strong>
+      <a href="tel:+911234567890">+91 1234567890</a>
+    </p>
+    <p>
+      <span class="icon">📸</span>
+      <strong>Instagram:</strong>
+      <a href="https://www.instagram.com/your_instagram_id" target="_blank">@your_instagram_id</a>
+    </p>
+
+  </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+{% endblock %}
+
+
